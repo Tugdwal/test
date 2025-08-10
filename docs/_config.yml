@@ -2,8 +2,8 @@ name: Name
 title: Title
 description: Description
 
-markdown: kramdown
-highlighter: rouge
-kramdown:
-  input: GFM
-  hard_wrap: false
+#markdown: kramdown
+#highlighter: rouge
+#kramdown:
+  #input: GFM
+  #hard_wrap: false
