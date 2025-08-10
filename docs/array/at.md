@@ -1,5 +1,7 @@
 # std#[array](../array.md)#`at`
 
+# [std#array](../array.md)#at
+
 Returns the `value` at the specified `index` in the `array`.
 
 ## Syntax
