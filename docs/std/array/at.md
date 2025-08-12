@@ -1,3 +1,7 @@
+---
+title: std#array#at
+---
+
 [BLink](../../index.md) > [Standard library](../../std.md) > [std#array](../array.md) > at
 
 # std#array#at
