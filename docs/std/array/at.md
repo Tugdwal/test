@@ -1,4 +1,6 @@
-# [BLink](../../index.md) > [Standard library](../../std.md) > [std#array](../array.md) > at
+[BLink](../../index.md) > [Standard library](../../std.md) > [std#array](../array.md) > at
+
+# std#array#at
 
 Returns the `value` at the specified `index` in the `array`.
 
