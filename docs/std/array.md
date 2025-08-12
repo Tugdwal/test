@@ -1,6 +1,8 @@
-[BLink](../index.md) > [Standard library](../std.md) > std#array
+
 
 # std#array
+
+[BLink](../index.md) > [Standard library](../std.md) > std#array
 
 `std#array` emulates a resizable array.
 
