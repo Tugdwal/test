@@ -1,4 +1,4 @@
-name: Name
+#name: Name
 #title: null
 #description: Description
 
@@ -7,3 +7,6 @@ name: Name
 #kramdown:
   #input: GFM
   #hard_wrap: false
+  
+titles_from_headings:
+  enabled: false
