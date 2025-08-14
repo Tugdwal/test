@@ -1,7 +1,7 @@
 {{ page.url }} &gt; {{ page.dir }} &gt; {{ page.title }}
 
 {% assign segments = page.dir | split: '/' %}
-{% for segment in segments %}
+{% for segment in segments offset: 1 %}
 <p>{{ segment | capitalize }}</p>
 {% else %}
 <p>Home</p>
