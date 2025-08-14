@@ -1,0 +1,7 @@
+std:
+  title: Standard library
+  url: /std/
+
+std_array:
+  title: std#array
+  url: /std/array
