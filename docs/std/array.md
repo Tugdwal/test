@@ -1,5 +1,3 @@
-
-
 # std#array
 
 [BLink](../index.md) > [Standard library](../std.md) > std#array
