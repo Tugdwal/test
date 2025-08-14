@@ -3,4 +3,6 @@
 {% assign segments = page.dir | split: '/' %}
 {% for segment in segments %}
 <p>{{ segment | capitalize }}</p>
+{% else %}
+<p>Home</p>
 {% endfor %}
