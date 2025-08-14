@@ -1,5 +1,5 @@
 {{ page.url }} &gt; {{ page.dir }} &gt; {{ page.title }}
 
-{% for segment in page.path %}
+{% for segment in page.dir | split: '/' %}
 <p>{{ segment | capitalize }}</p>
 {% endfor %}
