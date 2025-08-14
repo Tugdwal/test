@@ -2,6 +2,7 @@
 
 {% assign segments = page.dir | split: '/' %}
 <p>{{ segments | size }}</p>
+<p>{{ segments  }}</p>
 {% for segment in segments offset: 1 %}
 <p>{{ segment | capitalize }}</p>
 {% else %}
