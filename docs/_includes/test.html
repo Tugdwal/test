@@ -1,10 +1,8 @@
-<p>{{ site.url }}</p>
-<p>{{ site.baseurl }}</p>
 <p>
     {% assign segments = page.dir | split: '/' %}
-    <a href="/">Home</a>
+    <a href="{{ site.baseurl }}">Home</a>
     {% for segment in segments offset: 1 %}
-    &gt; <a href="/">{{ segment }}</a>
+    &gt; <a href="{{ site.baseurl }}">{{ segment }}</a>
     {% endfor %}
     &gt; {{ page.title }}
 </p>
