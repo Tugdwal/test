@@ -1,7 +1,9 @@
 <p>site.baseurl={{ site.baseurl }}</p>
 <p>page.path={{ page.path }}</p>
+<p>page.slug={{ page.slug }}</p>
 <p>page.dir={{ page.dir }}</p>
 <p>page.url={{ page.url }}</p>
+<p>{{ site.pages | where: 'url', '' }}
 <p>
     {% assign segments = page.dir | split: '/' %}
     <a href="{{ site.baseurl }}">Home</a>
