@@ -1,6 +1,7 @@
 <p>site.baseurl={{ site.baseurl }}</p>
-<p>page.url={{ page.url }}</p>
 <p>page.path={{ page.path }}</p>
+<p>page.dir={{ page.dir }}</p>
+<p>page.url={{ page.url }}</p>
 <p>
     {% assign segments = page.dir | split: '/' %}
     <a href="{{ site.baseurl }}">Home</a>
