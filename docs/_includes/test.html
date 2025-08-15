@@ -1,8 +1,10 @@
 <p>
     {% assign segments = page.dir | split: '/' %}
     <a href="{{ site.baseurl }}">Home</a>
+    "{{ segments | join: '", "' }}"
     {% for segment in segments offset: 1 %}
-    &gt; <a href="{{ site.baseurl }}">{{ site.data.test[segment] }}</a>
+    {% assign crumb = site.data.test[segment] %}
+    &gt; <a href="{{ crumb.url | prepend: site.baseurl }}">{{ crumb.title }}</a>
     {% endfor %}
     &gt; {{ page.title }}
 </p>
