@@ -1,5 +1,5 @@
 <p>
-    {% site.pages %}
+    {{ site.pages }}
     {% assign segments = page.dir | split: '/' %}
     <a href="{{ site.baseurl }}">Home</a>
     "{{ segments | join: '", "' }}"
