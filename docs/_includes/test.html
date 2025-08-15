@@ -3,6 +3,8 @@
 <p>page.slug={{ page.slug }}</p>
 <p>page.dir={{ page.dir }}</p>
 <p>page.url={{ page.url }}</p>
+<p>page.url={{ page.url | remove: '.html' | append: '/index.html' }}</p>
+<p>page.url={{ page.url | replace_last: '.html', '/index.html' }}</p>
 <p>{{ site.pages | where: 'url', '' }}
 <p>
     {% assign segments = page.dir | split: '/' %}
