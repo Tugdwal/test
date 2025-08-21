@@ -2,7 +2,7 @@
 <p>page.path={{ page.path }}</p>
 <p>page.slug={{ page.slug }}</p>
 <p>page.dir={{ page.dir }}</p>
-<p>{{ 'abc/abc' | replace_last: 'c', '.html' }}</p>
+<p>{{ 'abc/abc' | append: '.html' }}</p>
 <p>parent_url={{ page.dir | replace_last: 'std', '.html' }}</p>
 <p>
     {% assign segments = page.dir | split: '/' %}
