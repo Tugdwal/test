@@ -2,6 +2,7 @@
 <p>page.path={{ page.path }}</p>
 <p>page.slug={{ page.slug }}</p>
 <p>page.dir={{ page.dir }}</p>
+<p>parent_url={{ page.dir | replace_last: '/', '.html' }}</p>
 {% assign parent_url = page.dir | replace_last: '/', '.html' %}
 <p>parent_url={{ parent_url }}</p>
 {% assign parent = site.pages | where: 'url', 'parent' %}
