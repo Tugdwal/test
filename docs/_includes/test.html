@@ -3,7 +3,7 @@
 <p>page.slug={{ page.slug }}</p>
 <p>page.dir={{ page.dir }}</p>
 <p>page.url={{ page.url }}</p>
-<p>test={{ page.url | split: '/' | reverse | remove_first | reverse | join: '/' }}</p>
+<p>test={{ page.url | split: '/' | reverse | remove_first | reverse }}</p>
 <p>
     {% assign segments = page.dir | split: '/' %}
     <a href="{{ site.baseurl }}">Home</a>
