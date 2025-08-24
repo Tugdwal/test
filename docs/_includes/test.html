@@ -5,6 +5,7 @@
 <p>page.url={{ page.url }}</p>
 <p>page.url={{ page.url | replace_last: '.html', '/index.html' }}</p>
 <p>{{ 'abc/abc' | append: '.html' }}</p>
+<p>{{ 'abc/abc' | remove: 'abc' }}</p>
 <p>{{ 'abc/abc' | remove_last: 'abc' }}</p>
 <p>{{ 'abc/abc' | remove_last: '/abc' }}</p>
 <p>{{ 'abc/abc' | replace_last: 'abc', 'html' }}</p>
