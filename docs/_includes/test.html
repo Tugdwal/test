@@ -5,6 +5,10 @@
 <p>page.url={{ page.url }}</p>
 <p>page.url={{ page.url | replace_last: '.html', '/index.html' }}</p>
 <p>{{ 'abc/abc' | append: '.html' }}</p>
+<p>{{ 'abc/abc' | remove_last: 'abc' }}</p>
+<p>{{ 'abc/abc' | remove_last: '/abc' }}</p>
+<p>{{ 'abc/abc' | replace_last: 'abc', 'html' }}</p>
+<p>{{ 'abc/abc' | replace_last: '/abc', '.html' }}</p>
 <p>parent_url={{ page.dir | replace_last: 'std', '.html' }}</p>
 <p>
     {% assign segments = page.dir | split: '/' %}
