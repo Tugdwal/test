@@ -3,7 +3,10 @@
 <p>page.slug={{ page.slug }}</p>
 <p>page.dir={{ page.dir }}</p>
 <p>page.url={{ page.url }}</p>
-<p>test={{ page.url | split: '/' | pop | join: '/' | append: '.html' }}</p>
+{% assign url = page.url | split: '/' | pop | join: '/' | append: '.html' %}
+<p>url={{ url }}</p>
+{% assign parent = site.pages | where: 'url', url %}
+<p>parent={{ parent | inspect }}</p>
 <p>
     {% assign segments = page.dir | split: '/' %}
     <a href="{{ site.baseurl }}">Home</a>
