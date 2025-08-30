@@ -3,6 +3,7 @@
 <p>page.slug={{ page.slug }}</p>
 <p>page.dir={{ page.dir }}</p>
 <p>page.url={{ page.url }}</p>
+<p>{{ site.pages | inspect }}</p>
 {% assign url = page.url | split: '/' | pop | join: '/' | append: '.html' %}
 <p>url={{ url }}</p>
 {% assign parent = site.pages | where: 'url', url %}
