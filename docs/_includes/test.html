@@ -6,7 +6,7 @@
 {% assign url = page.url | split: '/' | pop | join: '/' | append: '.html' %}
 <p>url={{ url }}</p>
 {% assign parent = site.pages | where: 'url', url %}
-<p>parent={{ parent | inspect }}</p>
+<p>parent={{ parent.url }}</p>
 <p>
     {% assign segments = page.dir | split: '/' %}
     <a href="{{ site.baseurl }}">Home</a>
