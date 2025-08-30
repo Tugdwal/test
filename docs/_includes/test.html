@@ -6,9 +6,8 @@
 <p>{{ site.pages | inspect }}</p>
 {% assign url = page.url | split: '/' | pop | join: '/' | append: '.html' %}
 <p>url={{ url }}</p>
-{% assign parent = site.pages | where: 'url', url %}
+{% assign parent = site.pages | where: 'url', url | first %}
 <p>parent={{ parent | inspect }}</p>
-<p>parent={{ parent }}</p>
 <p>parent.url={{ parent.url }}</p>
 <p>parent.title={{ parent.title }}</p>
 <p>
