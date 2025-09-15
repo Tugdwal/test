@@ -11,6 +11,11 @@
 <p>parent.url={{ parent.url }}</p>
 <p>parent.title={{ parent.title }}</p>
 <p>
+    {% for page in site.pages %}
+    {{ page.url }} - {{ page.title }}
+    {% endfor %}
+</p>
+<p>
     {% assign segments = page.dir | split: '/' %}
     <a href="{{ site.baseurl }}">Home</a>
     "{{ segments | join: '", "' }}"
