@@ -1,20 +1,18 @@
+{% assign segments = page.dir | split: '/' %}
+{% for segment in segments %}
+{% assign url = url | append: '/' | append: segment %}
+<p>"{{ segment }}" - "{{ url }}"</p>
+{% endfor %}
+
 <p>site.baseurl={{ site.baseurl }}</p>
 <p>page.path={{ page.path }}</p>
 <p>page.slug={{ page.slug }}</p>
 <p>page.dir={{ page.dir }}</p>
 <p>page.url={{ page.url }}</p>
-<p>{{ site.pages | inspect }}</p>
 {% assign url = page.url | split: '/' | pop | join: '/' | append: '.html' %}
 <p>url={{ url }}</p>
 {% assign parent = site.pages | where: 'url', url | first %}
-<p>parent={{ parent | inspect }}</p>
 <p>parent.url={{ parent.url }}</p>
-<p>parent.title={{ parent.title }}</p>
-<p>
-    {% for page in site.pages %}
-    {{ page.url }} - {{ page.title }}
-    {% endfor %}
-</p>
 <p>
     {% assign segments = page.dir | split: '/' %}
     <a href="{{ site.baseurl }}">Home</a>
