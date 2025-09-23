@@ -1,6 +1,6 @@
 {% assign segments = page.dir | split: '/' %}
 {% for segment in segments %}
-{% assign url = url | append: '/' | append: segment %}
+{% assign url = url | append: segment | append: '/' %}
 <p>"{{ segment }}" - "{{ url }}"</p>
 {% endfor %}
 
