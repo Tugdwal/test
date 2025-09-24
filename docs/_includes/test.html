@@ -1,8 +1,8 @@
 {% assign links = '' | split: '' %}
 {% assign segments = page.dir | split: '/' %}
 {% for segment in segments %}
-{% assign url = url | append: segment | append: '/' %}
-{% assign crumb = site.data.test | where: 'url', url | first %}
+{% assign dir = dir | append: segment | append: '/' %}
+{% assign crumb = site.data.test | where: 'dir', dir | first %}
 {% capture link %}<a href="{{ crumb.url | relative_url }}">{{ crumb.title }}</a>{% endcapture %}
 {% assign links = links | push: link %}
 {% endfor %}
@@ -19,13 +19,3 @@
 <p>url={{ url }}</p>
 {% assign parent = site.pages | where: 'url', url | first %}
 <p>parent.url={{ parent.url }}</p>
-<p>
-    {% assign segments = page.dir | split: '/' %}
-    <a href="{{ site.baseurl }}">Home</a>
-    "{{ segments | join: '", "' }}"
-    {% for segment in segments offset: 1 %}
-    {% assign crumb = site.data.test[segment] %}
-    &gt; <a href="{{ crumb.url | prepend: site.baseurl }}">{{ crumb.title }}</a>
-    {% endfor %}
-    &gt; {{ page.title }}
-</p>
