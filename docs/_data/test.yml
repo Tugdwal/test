@@ -1,6 +1,13 @@
-std:
-    title: Standard library
-    url: /std.html
-array:
-    title: std#array
-    url: /std/array.html
+- url: /
+  title: BLink
+- url: /std
+  title: Standard library
+- url: /std/array
+  title: std#array
+
+#std:
+#    title: Standard library
+#    url: /std.html
+#array:
+#    title: std#array
+#    url: /std/array.html
