@@ -1,8 +1,8 @@
 - url: /
   title: BLink
-- url: /std
+- url: /std/
   title: Standard library
-- url: /std/array
+- url: /std/array/
   title: std#array
 
 #std:
