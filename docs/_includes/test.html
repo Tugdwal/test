@@ -5,6 +5,8 @@
 {% capture link %}<a href="{{ crumb.url | relative_url }}">{{ crumb.title }}</a>{% endcapture %}
 {% assign links = links | push: link %}
 {% endfor %}
+<p>{{ segments | inspect }}</p>
+<p>{{ links | inspect }}</p>
 <p>{{ links | join: ' > ' }}</p>
 
 <p>site.baseurl={{ site.baseurl }}</p>
