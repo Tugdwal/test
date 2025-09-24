@@ -1,4 +1,5 @@
 {% assign links = '' | split: '' %}
+{% assign segments = page.dir | split: '/' %}
 {% for segment in segments %}
 {% assign url = url | append: segment | append: '/' %}
 {% assign crumb = site.data.test | where: 'url', url | first %}
@@ -7,7 +8,7 @@
 {% endfor %}
 <p>{{ segments | inspect }}</p>
 <p>{{ links | inspect }}</p>
-<p>{{ links | join: ' > ' }}</p>
+<p>{{ links | join: ' &gt; ' }}</p>
 
 <p>site.baseurl={{ site.baseurl }}</p>
 <p>page.path={{ page.path }}</p>
