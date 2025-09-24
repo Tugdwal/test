@@ -7,10 +7,3 @@
 - dir: /std/array/
   url: /std/array.html
   title: std#array
-
-#std:
-#    title: Standard library
-#    url: /std.html
-#array:
-#    title: std#array
-#    url: /std/array.html
